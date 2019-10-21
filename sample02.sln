@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample02.IService", "..\sam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample02.Service", "..\sample02.Service\sample02.Service.csproj", "{B165E620-6DFC-49AB-9FB0-14AA836DBB57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sample02.Dtos", "..\sample02.Dtos\sample02.Dtos.csproj", "{2CD834D0-615C-4426-86AD-896A7531D19C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample02.Dtos", "..\sample02.Dtos\sample02.Dtos.csproj", "{2CD834D0-615C-4426-86AD-896A7531D19C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
