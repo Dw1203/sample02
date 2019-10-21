@@ -1,0 +1,267 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>sample02</name>
+    </assembly>
+    <members>
+        <member name="M:sample02.Controllers.AchievementController.GetAllAchievement">
+            <summary>
+            获取所有成绩信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.AchievementController.GetAchievementsByStuName(System.String)">
+            <summary>
+            根据学生姓名获取学生成绩
+            </summary>
+            <param name="Name">学生姓名</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.AchievementController.GetAchievementByStuNum(System.String)">
+            <summary>
+            根据学生编号获取学生成绩
+            </summary>
+            <param name="Num">学生学号</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.AchievementController.GetAchievementByCourseName(System.String)">
+            <summary>
+            根据课程名称获取学生成绩
+            </summary>
+            <param name="Name">课程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.AchievementController.GetAchievementByCourseNum(System.String)">
+            <summary>
+            根据课程编号获取学生成绩
+            </summary>
+            <param name="Num">课程编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.AchievementController.AddAchievement(sample02.Dtos.AchievementDtos.CreateAchievementDto)">
+            <summary>
+            添加成绩信息
+            </summary>
+            <param name="createAchievementDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.AchievementController.UpdateAchievement(sample02.Dtos.AchievementDtos.ModifyAchievement)">
+            <summary>
+            更新成绩信息
+            </summary>
+            <param name="modify"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.AchievementController.DeleteAchievement(System.Int32)">
+            <summary>
+            删除一条成绩记录
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.ClassroomController.AddClassroom(sample02.Dtos.ClassroomDtos.CreateClassroomDto)">
+            <summary>
+            添加教室信息
+            </summary>
+            <param name="createClassroomDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.ClassroomController.GetClassroom">
+            <summary>
+            获取所有教室信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.ClassroomController.GetAllClassroomDetail">
+            <summary>
+            获取全部教室的详细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseController.GetAllCourse">
+            <summary>
+            获取所有课程信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseController.GetAllCourseDetail">
+            <summary>
+            获取所有课程的详细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseController.GetCourseDetailByName(System.String)">
+            <summary>
+            根据课程名称获取课程详细信息
+            </summary>
+            <param name="Name">课程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseController.GetCourseDetailByNumber(System.String)">
+            <summary>
+            根据课程编号获取课程详细信息
+            </summary>
+            <param name="Num"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseController.AddCourse(sample02.Dtos.CourseDtos.CreateCourseDto)">
+            <summary>
+            添加课程信息
+            </summary>
+            <param name="createCourseDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseController.UpdateCourse(System.Int32,sample02.Dtos.CourseDtos.ModifyCourseDto)">
+            <summary>
+            修改课程信息
+            </summary>
+            <param name="id">课程id</param>
+            <param name="modifyCourseDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseController.DeleteCourse(System.Int32)">
+            <summary>
+            删除课程信息
+            </summary>
+            <param name="id">课程id</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StuClassController.GetAllStuClass">
+            <summary>
+            获取所有班级信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StuClassController.GetAllStuClassDetail">
+            <summary>
+            获取所有班级的详细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StuClassController.AddStuClass(sample02.Dtos.StuClassDtos.CreateStuClassDto)">
+            <summary>
+            添加班级信息
+            </summary>
+            <param name="createStuClass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StuClassController.DeteleStuClass(System.Int32)">
+            <summary>
+            删除班级信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StuClassController.UpdateStuClass(System.Int32,sample02.Dtos.StuClassDtos.ModifyStuClassDto)">
+            <summary>
+            修改班级信息
+            </summary>
+            <param name="id"></param>
+            <param name="modifyStuClassDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.GetAll">
+            <summary>
+            获取所有学生信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.GetStudentsDetail">
+            <summary>
+            获取所有学生详细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.GetStudentDetailById(System.Int32)">
+            <summary>
+            根据Id获取学生详细信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.GetStudentDetailByStuName(System.String)">
+            <summary>
+            根据姓名获取学生详细信息
+            </summary>
+            <param name="Name">学生姓名</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.GetStudentDetailByStuNumber(System.String)">
+            <summary>
+            根据学号查询学生详细信息
+            </summary>
+            <param name="Number">学号</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.AddStudent(sample02.Dtos.StudentDtos.CreateStudentDto)">
+            <summary>
+            新增一条数据
+            </summary>
+            <param name="studentDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.UpdateStudent(System.Int32,sample02.Dtos.StudentDtos.ModifyStudentDto)">
+            <summary>
+            更新学生信息
+            </summary>
+            <param name="id">学生id</param>
+            <param name="modifyStudent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.DeleteStudent(System.Int32)">
+            <summary>
+            删除学生信息
+            </summary>
+            <param name="id">学生id</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentController.AddStudentToClass(System.Int32,System.Int32)">
+            <summary>
+            添加学生到班级
+            </summary>
+            <param name="StuId">学生id</param>
+            <param name="StuClassId">班级id</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentCourseController.GetAllStuCrs">
+            <summary>
+            获取所有学生课程信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentCourseController.GetStuCrsByStuName(System.String)">
+            <summary>
+            根据学生姓名获取课程信息
+            </summary>
+            <param name="StuName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentCourseController.GetStuCrsByCourseName(System.String)">
+            <summary>
+            根据课程名称获取课程信息
+            </summary>
+            <param name="CourseName">课程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentCourseController.AddStudentCourse(sample02.Dtos.StudentCourseDtos.CreateStudentCourseDto)">
+            <summary>
+            添加一条记录
+            </summary>
+            <param name="createStudentCourse"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.StudentCourseController.DeleteStuCourse(sample02.Dtos.StudentCourseDtos.DeleteStudentCourseDto)">
+            <summary>
+            删除一条记录
+            </summary>
+            <param name="deleteStudent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.ValuesController.Get">
+            <summary>
+            getsss
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
