@@ -78,6 +78,21 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:sample02.Controllers.ClassroomController.UpdateClassroom(System.Int32,sample02.Dtos.ClassroomDtos.ModifyClassroom)">
+            <summary>
+            更新教室信息
+            </summary>
+            <param name="id"></param>
+            <param name="modifyClassroom"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.ClassroomController.DeleteClassroom(System.Int32)">
+            <summary>
+            删除教室信息
+            </summary>
+            <param name="id">教室id</param>
+            <returns></returns>
+        </member>
         <member name="M:sample02.Controllers.CourseController.GetAllCourse">
             <summary>
             获取所有课程信息
