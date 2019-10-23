@@ -54,7 +54,14 @@ namespace sample02
             services.AddScoped<IClassroomService, ClassroomService>();
             services.AddScoped<ICourseClassroomRepository, CourseClassroomRepository>();
             services.AddScoped<ICourseClassroomService, CourseClassroomService>();
-
+            services.AddScoped<IPasternRepository, PasternRepositoy>();
+            services.AddScoped<IPasternService, PasternService>();
+            services.AddScoped<IMajorRepository, MajorRepository>();
+            services.AddScoped<IMajorService, MajorService>();
+            services.AddScoped<IOfficeRepository, OfficeRepository>();
+            services.AddScoped<IOfficeService, OfficeService>();
+            services.AddScoped<IPositionRepository, PositionRepository>();
+            services.AddScoped<IPositionService, PositionService>();
             //配置AutoMapper
             var map = new MapperConfiguration(mc =>
             {

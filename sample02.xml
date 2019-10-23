@@ -93,6 +93,40 @@
             <param name="id">教室id</param>
             <returns></returns>
         </member>
+        <member name="M:sample02.Controllers.CourseClassroomController.AddCourseClassroom(sample02.Dtos.CourseClassroomDtos.CreateCourseClassroomDto)">
+            <summary>
+            给课程添加教室
+            </summary>
+            <param name="create"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseClassroomController.GetCourseClassroom">
+            <summary>
+            获取所有课程教室信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseClassroomController.GetCourseClassroomByCourseName(System.String)">
+            <summary>
+            根据课程名称获取课程教室信息
+            </summary>
+            <param name="CourseName">课程名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseClassroomController.GetCourseClassroomByClsName(System.String)">
+            <summary>
+            根据教室名称获取课程教室信息
+            </summary>
+            <param name="ClassroomName">教室名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.CourseClassroomController.DeleteCourseClassroom(System.Int32)">
+            <summary>
+            删除教室课程信息
+            </summary>
+            <param name="id">id</param>
+            <returns></returns>
+        </member>
         <member name="M:sample02.Controllers.CourseController.GetAllCourse">
             <summary>
             获取所有课程信息
@@ -139,6 +173,193 @@
             删除课程信息
             </summary>
             <param name="id">课程id</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.MajorController.AddMajor(sample02.Dtos.MajorDtos.CreateMajorDto)">
+            <summary>
+            添加专业
+            </summary>
+            <param name="createMajorDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.MajorController.GetAllMajor">
+            <summary>
+            获取所有专业信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.MajorController.GetAllMajorDetail">
+            <summary>
+            获取所有专业详细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.MajorController.GetAllMajorDetailByMjName(System.String)">
+            <summary>
+            根据专业名称获取专业信息
+            </summary>
+            <param name="Name">专业名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.MajorController.GetAllMajorDetailByMjNum(System.String)">
+            <summary>
+            根据专业编号获取专业信息
+            </summary>
+            <param name="Num">专业编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.MajorController.UpdateMajor(System.Int32,sample02.Dtos.MajorDtos.ModifyMajorDto)">
+            <summary>
+            更新专业信息
+            </summary>
+            <param name="id">专业id</param>
+            <param name="modifyMajor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.MajorController.DeleteMajor(System.Int32)">
+            <summary>
+            删除专业信息
+            </summary>
+            <param name="id">专业id</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.MajorController.AddMajorToPastern(System.String,System.String)">
+            <summary>
+            将专业添加到系部
+            </summary>
+            <param name="MajorName">专业名称</param>
+            <param name="PasternName">系部名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.OfficeController.AddOffice(sample02.Dtos.OfficeDtos.CreateOfficeDto)">
+            <summary>
+            添加办公室信息
+            </summary>
+            <param name="createOfficeDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.OfficeController.GetAllOffice">
+            <summary>
+            获取所有办公室信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.OfficeController.GetOfficeByOfficeName(System.String)">
+            <summary>
+            根据办公室名称获取办公室信息
+            </summary>
+            <param name="OfficeName">办公室名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.OfficeController.GetOfficeByOfficeNum(System.String)">
+            <summary>
+            根据办公室编号获取办公室信息
+            </summary>
+            <param name="OfficeNum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.OfficeController.UpdateOffice(System.Int32,sample02.Dtos.OfficeDtos.ModifyOfficeDto)">
+            <summary>
+            修改办公室信息
+            </summary>
+            <param name="id">办公室id</param>
+            <param name="modifyOfficeDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.OfficeController.DeleteOffice(System.Int32)">
+            <summary>
+            删除办公室
+            </summary>
+            <param name="id">办公室id</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PasternController.AddPastern(sample02.Dtos.PasternDtos.CreatePasternDto)">
+            <summary>
+            添加系部信息
+            </summary>
+            <param name="createPastern"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PasternController.GetAllPastern">
+            <summary>
+            获取所有系部信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PasternController.GetAllPasternDetail">
+            <summary>
+            获取所有系部详细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PasternController.GetPasternByName(System.String)">
+            <summary>
+            根据系部名称获取系部信息
+            </summary>
+            <param name="PasName">系部名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PasternController.GetPasternByNum(System.String)">
+            <summary>
+            根据系部编号获取系部信息
+            </summary>
+            <param name="PasNum">系部编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PasternController.UpdatePastern(System.Int32,sample02.Dtos.PasternDtos.ModifyPasternDto)">
+            <summary>
+            修改系部信息
+            </summary>
+            <param name="id"></param>
+            <param name="modifyPasternDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PasternController.DeletePastern(System.Int32)">
+            <summary>
+            删除系部信息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PositionController.AddPosition(sample02.Dtos.PositionDtos.CreatePositionDto)">
+            <summary>
+            添加职位
+            </summary>
+            <param name="createPosition"></param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PositionController.GetAllPosition">
+            <summary>
+            获取所有职位信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PositionController.GetAllPositionDetail">
+            <summary>
+            获取所有职位详细信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PositionController.GetPosByPosName(System.String)">
+            <summary>
+            根据职位名称获取职位信息
+            </summary>
+            <param name="PosName">职位名称</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PositionController.GetPosByPosNum(System.String)">
+            <summary>
+            根据职位编号获取职位名称
+            </summary>
+            <param name="PosNum">职位编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:sample02.Controllers.PositionController.UpdatePosition(System.Int32,sample02.Dtos.PositionDtos.ModifyPositionDto)">
+            <summary>
+            修改职位信息
+            </summary>
+            <param name="id">位置id</param>
+            <param name="modifyPosition"></param>
             <returns></returns>
         </member>
         <member name="M:sample02.Controllers.StuClassController.GetAllStuClass">
